@@ -6,7 +6,7 @@
 /*   By: mfierlaf <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/03 17:03:23 by mfierlaf          #+#    #+#             */
-/*   Updated: 2018/10/03 17:06:23 by mfierlaf         ###   ########.fr       */
+/*   Updated: 2018/10/04 14:50:12 by mfierlaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@ int		ft_count_if(char **tab, int (*f)(char*))
 	cpt = 0;
 	while (tab[i] != 0)
 	{
-		if (tab[i] == 1)
+		if (f(tab[i]) == 1)
 			cpt++;
+		i++;
 	}
 	return (cpt);
 }

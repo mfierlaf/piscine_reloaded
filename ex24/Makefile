@@ -6,15 +6,15 @@
 #    By: mfierlaf <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/03 15:52:13 by mfierlaf          #+#    #+#              #
-#    Updated: 2018/10/03 16:23:39 by mfierlaf         ###   ########.fr        #
+#    Updated: 2018/10/04 14:48:00 by mfierlaf         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC = ~/srcs/ ft_putchar.c ft_putstr.c ft_strcmp.c ft_strlen.c ft_swap.c
+SRC = srcs/*.c
 
-HEADERS = ~/includes/
+HEADERS = includes/
 
 OBJECTS = *o
 

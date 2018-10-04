@@ -6,7 +6,7 @@
 /*   By: mfierlaf <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/02 18:54:33 by mfierlaf          #+#    #+#             */
-/*   Updated: 2018/10/02 19:10:48 by mfierlaf         ###   ########.fr       */
+/*   Updated: 2018/10/04 14:40:26 by mfierlaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,12 @@ char	*ft_strdup(char *src)
 	i = 0;
 	while (src[i] != '\0')
 		i++;
-	cpy = malloc(sizeof(char) * i);
-	cpy = src;
+	cpy = malloc(sizeof(char) * (i + 1));
+	cpy[i] = '\0';
+	while (i >= 0)
+	{
+		cpy[i] = src[i];
+		i--;
+	}
 	return (cpy);
 }
