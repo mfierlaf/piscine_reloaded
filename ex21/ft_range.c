@@ -6,7 +6,7 @@
 /*   By: mfierlaf <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/03 14:05:08 by mfierlaf          #+#    #+#             */
-/*   Updated: 2018/10/04 15:05:46 by mfierlaf         ###   ########.fr       */
+/*   Updated: 2018/10/04 15:15:22 by mfierlaf         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,5 @@ int		*ft_range(int min, int max)
 		range[i] = min + i;
 		i++;
 	}
-	range[max] = '\0';
 	return (range);
 }
